@@ -50,4 +50,4 @@ df_agg = df.select(
 )
 
 # Show the results
-df_agg.show(truncate=False)
+df_agg.show(truncate=False) 

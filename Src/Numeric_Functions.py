@@ -34,4 +34,4 @@ df_agg = df.select(
     abs(min("amount")).alias("abs_min")
 )
 
-df_agg.show()
+df_agg.show() 

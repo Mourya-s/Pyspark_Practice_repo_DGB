@@ -54,4 +54,4 @@ df.select(length("name").alias("name_length")).show()
 df.select(instr("email", "gmail").alias("instr_gmail")).show()  # position of "gmail"
 
 # 14.16 initcap()
-df.select(initcap("name").alias("initcap_name")).show() 
+df.select(initcap("name").alias("initcap_name")).show()  

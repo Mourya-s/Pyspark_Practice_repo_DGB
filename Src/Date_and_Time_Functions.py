@@ -14,7 +14,7 @@ data = [("2026-03-01",), ("2026-03-05",)]
 df = spark.createDataFrame(data, ["date_str"])
 
 
-# Convert string column to proper date t
+# Convert stri ng column to proper date t
 df = df.withColumn("date_col", to_date("date_str", "yyyy-MM-dd"))
 
 
