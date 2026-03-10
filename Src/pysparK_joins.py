@@ -38,8 +38,9 @@ full_join_df.show()
 
 left_semi_df = df1.join(df2, on="id", how="left_semi")
 left_semi_df.show()
-
+ 
 # Left Anti Join (rows from left that do NOT have match in right)
 
 left_anti_df = df1.join(df2, on="id", how="left_anti")
+
 left_anti_df.show()
