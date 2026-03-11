@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession
+ from pyspark.sql import SparkSession
 from pyspark.sql.functions import abs, ceil, floor, exp, log, pow, sqrt
 
 # Create Spark Session
@@ -24,5 +24,6 @@ result = df.select(
     pow("value", 2).alias("POWER_value"),
     sqrt("value").alias("SQRT_value")
 )
+
 
 result.show()
