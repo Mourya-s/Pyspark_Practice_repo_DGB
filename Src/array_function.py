@@ -1,4 +1,4 @@
- from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession
 from pyspark.sql.functions import array, array_contains, size, array_position, array_remove
 
 spark = SparkSession.builder.appName("ArrayFunctions").getOrCreate()
@@ -23,6 +23,5 @@ result = df_array.select(
     array_position("arr","C").alias("position_C"),
     array_remove("arr","A").alias("remove_A")
 )
-
 
 result.show()
